@@ -9,7 +9,7 @@ const LoginPage = ({ navigation }) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
-    if (username === 'admin' && password === '1234') {
+    if (username === 'admin' && password === '12') {
       await AsyncStorage.setItem('username', username);
       navigation.navigate('Welcome', { username });
     } else {
